@@ -41,6 +41,8 @@ class RecommendedPlant extends StatelessWidget {
                     PlantCard(),
                     PlantCard(),
                     PlantCard(),
+                    PlantCard(),
+                    
                    
                 ],
               ),

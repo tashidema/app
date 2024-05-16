@@ -1,3 +1,5 @@
+import 'package:athang_application/widgets/Discovery/DiscoveryCard.dart';
+import 'package:athang_application/widgets/Discovery/DiscoverySearch.dart';
 import 'package:flutter/material.dart';
 
 class Discovery extends StatelessWidget {
@@ -7,40 +9,35 @@ class Discovery extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-        title: const Column(        
+        title: const Row( 
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,       
         children: [          
-         Text(
-             'Discovery',
-             style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
-            ),
-           Text(
-          'You are in Prague ',
-            style: TextStyle(fontSize: 10),
-            ),
-            Row(
-              children: [
-                Icon(Icons.line_style),
-              ],
-            ),  
+         Column(
+         crossAxisAlignment: CrossAxisAlignment.start,
+           children: [
+             Text(
+                 'Discovery',
+                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+               Text(
+              'You are in Prague ',
+                style: TextStyle(fontSize: 14),
+                ),
+           ],
+         ),            
+          Icon(Icons.line_style),             
         ],
       ), 
                      
      ), 
-
-      body: Container(
-       margin: const EdgeInsets.symmetric(horizontal: 16,vertical:16),
-       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      decoration: BoxDecoration(
-        color: Colors.grey,
-        borderRadius: BorderRadius.circular(32),
-      ),
-      child: const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [          
-          Icon(Icons.search),
-          ],
-      ),
-    )     
+    body: const SingleChildScrollView(
+          child: Column(
+            children: [
+              DiscoverySearch(),
+              DiscoveryCard()
+            ],
+            ),
+          ),
     );
   }
 }

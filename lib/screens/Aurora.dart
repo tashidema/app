@@ -17,7 +17,7 @@ class Aurora extends StatelessWidget {
                   style: TextStyle(fontSize: 32,fontWeight: FontWeight.bold),
                 ),
                 Container(
-                  margin:const EdgeInsets.only(bottom:18),
+                  margin:const EdgeInsets.symmetric(horizontal:0,vertical: 16),
                   //padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 25),        
                   width:double.infinity,
                   height:300,

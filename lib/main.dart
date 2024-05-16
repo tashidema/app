@@ -1,3 +1,4 @@
+import 'package:athang_application/screens/Travel/Intro.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,11 +17,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //home: Gofit()
+      // home: Gofit()
       // home: Aurora()
-      // home: Bodylotion()
+      //home: Bodylotion()
       // home: Expenses()
-      // home: Discovery()
+      //home: const Discovery()
+      home: Intro()
+      //home: PopularTravel()
     );
   }
 }

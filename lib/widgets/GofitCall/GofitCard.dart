@@ -17,7 +17,7 @@ class GofitCard extends StatelessWidget {
             margin: const EdgeInsets.only(right: 16),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15), color: Colors.grey),
-            height: 400,
+            height: 300,
             width: double.infinity,
             // margin: EdgeInsets.only(bottom:16),
             child: Image.network(

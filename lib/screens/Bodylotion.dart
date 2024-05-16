@@ -7,7 +7,7 @@ class Bodylotion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Icon(Icons.arrow_left),
+          title: const Icon(Icons.arrow_back_ios),
           ),
 
         body: SingleChildScrollView(
@@ -30,7 +30,7 @@ class Bodylotion extends StatelessWidget {
                   style:TextStyle(fontSize: 26,fontWeight: FontWeight.bold),                  
                 ),
                 const Row(
-                  // margin:EdgeInsets.only(top:30),
+                 
                   children: [
                     Icon(Icons.star,color: Colors.yellow,),
                     Icon(Icons.star,color: Colors.yellow,),

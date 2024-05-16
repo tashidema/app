@@ -15,24 +15,24 @@ class Gofit1 extends StatelessWidget {
         children: [
           const Text(
             'Dare to ',
-            style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
           ),
           const Text(
             'innovate',
-            style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
           ),
           Row(
             children: [
               const Text(
                 'with',
-                style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
               ),
               Container(
                 margin: const EdgeInsets.only(left: 12),
                 child: const Text(
                   'GoFit',
                   style: TextStyle(
-                      fontSize: 42, fontWeight: FontWeight.bold, color: Colors.blue),
+                      fontSize: 34, fontWeight: FontWeight.bold, color: Colors.blue),
                 ),
               ),
             ],
